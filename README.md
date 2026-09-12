@@ -25,5 +25,8 @@ Checksum Verification: SHA-256 cryptographic hashes are provided in the respecti
 > [!WARNING]
 > **Warning & Best Practices:** Always review script contents before executing automated tools on your local machine or server.
 
+## Releases
+These are found in the Releases: https://github.com/mumssh/automation-utility-scripts-collection/releases
+
 ## License
 This repository is distributed under the MIT License. You are free to copy, modify, merge, publish, and distribute these scripts in your own personal or commercial projects. See the LICENSE file for full details.
