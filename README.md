@@ -29,4 +29,4 @@ Checksum Verification: SHA-256 cryptographic hashes are provided in the respecti
 These are found in the Releases: https://github.com/mumssh/automation-utility-scripts-collection/releases
 
 ## License
-This repository is distributed under the MIT License. You are free to copy, modify, merge, publish, and distribute these scripts in your own personal or commercial projects. See the LICENSE file for full details.
+This repository is distributed under the MIT License (c) 2026 by Lucilyn Tangian. You are free to copy, modify, merge, publish, and distribute these scripts in your own personal or commercial projects. See the LICENSE file for full details.
