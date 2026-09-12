@@ -1,21 +1,29 @@
-# Advanced Windows Network Toolkit
+# Automation & Utility Scripts Collection
 
-**Architect & Lead Developer:** Lucilyn Tangian  
-**Version:** 1.1.0  
-**Release Date:** September 2026  
+Welcome to the repository! This is a curated collection of standalone utility scripts, helper tools, and automation modules designed for easy execution on their own or integration into larger workflow pipelines.
 
-## System Architecture
-This toolkit is a zero-dependency, native Windows Command Prompt (CMD) application designed for L3/L7 network triage. It requires no external scripting engines, executable wrappers, or installation, ensuring immediate execution on locked-down enterprise endpoints.
+---
 
-### Key Engineering Decisions
-* **Automated Stateful Logging:** Dynamically generates timestamped output directories (`%USERPROFILE%\Documents\NetworkToolkitLogs`) to ensure audit trails for incident post-mortems without file overwrite collisions.
-* **Strict Privilege Guardrails:** Implements native `fltmc` elevation checks to prevent unprivileged execution of state-changing commands (e.g., DNS flushing, TCP/IP stack resets).
-* **Drag-and-Drop Resolution:** Includes custom logic to parse file paths or raw string inputs, dynamically sanitizing URLs and bracketed IPv6 targets for instant diagnostic execution.
-* **Isolated "Read-Only" vs "State-Changing" Execution Blocks:** Protects end-users by segregating non-destructive data collection from high-impact connectivity changes, enforcing explicit approval prompts before executing the latter.
+## Repository Structure & Navigation
 
-## Usage Instructions
-1. Right-click `advanced_network_toolkit_v1.1.cmd` and select **Run as Administrator**.
-2. Alternatively, drag and drop a text file containing an IP or Domain directly onto the script icon to trigger an immediate targeted diagnostic suite.
+Each script or compressed archive (`.zip`) in this collection is self-contained within its respective directory. 
 
-## Security & Integrity
-To verify the integrity of this script and ensure no unauthorized command injections have been made, check the file against its official cryptographic hash (refer to release notes).
+To make setup as straightforward as possible, **every script and `.zip` file includes**:
+* **Description:** A dedicated overview of what the script does and its primary use cases.
+* **Usage Instructions:** Clear, step-by-step guides on prerequisites, parameter flags, environment setup, and execution commands.
+* **Dependencies:** Requirements files (e.g., `requirements.txt`, `package.json`, or system package requirements) where applicable.
+
+## Usage Model
+
+You can consume these tools in two primary ways:
+* **Standalone Execution:** Run individual scripts directly from your terminal to automate manual or repetitive local tasks.
+* **Modular Integration:** Import functions or subroutines directly into your existing automation frameworks, CI/CD pipelines, or larger application codebases.
+
+## Security & File Integrity
+
+Checksum Verification: SHA-256 cryptographic hashes are provided in the respective directory documentation to allow local integrity checks prior to execution.
+> [!WARNING]
+> **Warning & Best Practices:** Always review script contents before executing automated tools on your local machine or server.
+
+## License
+This repository is distributed under the MIT License. You are free to copy, modify, merge, publish, and distribute these scripts in your own personal or commercial projects. See the LICENSE file for full details.
