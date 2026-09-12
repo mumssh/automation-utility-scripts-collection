@@ -21,9 +21,8 @@ You can consume these tools in two primary ways:
 
 ## Security & File Integrity
 
-**Checksum Verification:** SHA-256 cryptographic hashes are provided in the respective directory documentation to allow local integrity checks prior to execution.
-
-**No Hardcoded Secrets:** None of these scripts contain API keys, hardcoded passwords, or private environment variables. Always pass your sensitive credentials via environment variables or secret managers.
+* **Checksum Verification:** SHA-256 cryptographic hashes are provided in the respective directory documentation to allow local integrity checks prior to execution.
+* **No Hardcoded Secrets:** None of these scripts contain API keys, hardcoded passwords, or private environment variables. Always pass your sensitive credentials via environment variables or secret managers.
 
 > [!WARNING]
 > **Warning & Best Practices:** Always review script contents before executing automated tools on your local machine or server.
